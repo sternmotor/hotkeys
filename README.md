@@ -1,9 +1,18 @@
-# hotkeys
-Keyboard shortcut proposal for easy-to-learn, quick, mouse-free access with hands on keyboard under Mac OS, Linux Desktops and Windows.
+# Desktop Hotkey Guideline
+Keyboard shortcut proposal for easy-to-learn, quick, mouse-free access with hands on keyboard under MacOS, Linux Desktops and Windows.
 
 ## Description
-If possible, use a mouse with support of mousewheel click (left/right) and a set of two thumb buttons like for example a Logitech M500. Such a setup may replace the need for Trackpad
+Basically, all keyboard shortcuts listed here are just proposals. These have to be implemented in the MacOS/Linux/Windows Desktop. 
 
+There is some effort put in finding key combos which do not interfere with genuine setup under MacOS/Linux/Windows, but some adjustments may have to be taken. For example the unified approach to have `WIN/CMD + Cursor Keys` resize and move windows does not work under macOS where `CMD + Cursor Keys` cycles through desktop spaces. This can be switched to `CTRL + Cursor Keys` easily - just do it in case you happen to work on MacOS and linux desktop.
+
+All gestures which look too hard to learn easly are left out. 
+
+Following tools can be used to realize those proposals - examples will be provided in future.
+
+* MacOS: use [BetterTouchTool](https://folivora.ai/) - configuration is planned to be included in this repository in future
+* Linux: Both [Cinnamon Desktop](https://linuxmint.com/download.php) and [Fluxbox|http://fluxbox.org/]  offer some good support for manipulating keyboard shortcuts. For some actions, scripts are needed. These will be provided here in future.
+* Windows: oops, sorry. Please support me with some insight on [AutoIT](https://www.autoitscript.com/site/autoit/) or similar - I have no experiences here
 
 Words and abbreviations used here:
 
@@ -13,59 +22,44 @@ Words and abbreviations used here:
 * MWheel L/R: mouse wheel click left/right
 * ThumbB U/D: mouse thumb button up/down
 
+For some parts, mouse wheel click respectively thumb button action proposals have been added which fit in nicely. Make sure to use a mouse with support of mousewheel click (left/right) and a set of two thumb buttons like for example a Logitech M500.
+
 
 ## Desktop Navigation (mainly CTRL)
-* Switch to desktop L/R 
-    * `CTRL + L/R`
-    * `MWheel L/R`
-
-    CTRL + U/D: Move current window and scope to desktop L/R
-    CTRL + MWheel L/R: Move current window and scope to desktop L/R
-    SHIFT + CTRL + U/D: Move current window to desktop L/R, stay on same desktop
-    SHIFT + CTRL + MWheel L/R: Move current window to desktop L/R
-
-## Window Move Resize (mainly WIN/CMD)
-
-
-|Description              | x86 Keyboard            | MacOS Keyboard          |
-|-------------------------|-------------------------|-------------------------|
-
-|Description                    |       x86 Keyboard        |      MacOS Keyboard       |
-|-------------------------------|---------------------------|---------------------------|
-|Half size left/right           |WIN + cursor left/right    |CMD + cursor left/right    |
-|Quarter size in edge           |WIN + CTRL + cursor        |CMD + CTRL + cursor       |
-|Third size left/middle/right   |WIN + SHIFT + cursor       |CMD + SHIFT + cursor|
-|Maximize                       |WIN + cursor up      |WIN + cursor up            |CMD + cursor up            |
-|Normal size                    |WIN + cursor down|WIN + cursor down          |CMD + cursor up            |
-|Sticky window|||
-
-
-
-    Switch tmux sessions
-    WIN + </>: Switch application windows (+ SHIFT: reverse direction)
-    WIN + MWheel L/R: Switch application windows
-    WIN + L/R: half screen size on left/right side of screen
-    WIN + U: maximize to top
-    WIN + D: restore original windows size
-    SHIFT + WIN + L/R/U/D: same as WIN + L/R/U/D, but quarter size
-    CTRL + WIN + L/R: move window to left/right screen
-    CTRL + WIN + MWheel L/R: move window to left/right screen
-    WIN + ENTER: fullscreen mode
-    ALT + Tab: Cycle through applications (+ SHIFT: reverse direction)
-
-## Window Tabs (ALT/ OPTION keys)
 
 |Description              | x86 Keyboard            | MacOS Keyboard          |Mouse Action             |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-|Switch Tabs              |ALT + </>                |ALT + </>                |ThumbB U/D: Switch Tabs  |
+|Switch desktop/space     |CTRL + L/R               |CTRL + L/R               |MWheel L/R               |
+| + move window and scope |CTRL + U/D               |CTRL + U/D               |CTRL + MWheel L/R        |
+| + move window           |CTRL + ALT + L/R         |CTRL + CMD + L/R         |CTRL + ALT/CMD L/R       |
+|Switch to desktop 1      |CTRL + 1                 |CTRL + 1                 |                         |
+|Switch to desktop 2      |CTRL + 2                 |CTRL + 2                 |                         |
 
-## Tmux panes
 
-For tmux panes, there is no equivalent in window or desktop handling. Therefore 
-nothing is proposed here - just stick to the usual `CTRL + b + L/R/U/D`
+## Window Move Resize (mainly WIN/CMD)
+
+|Description              | x86 Keyboard            | MacOS Keyboard          |Mouse Action             |
+|-------------------------|-------------------------|-------------------------|-------------------------|
+|Half size left/right edge|WIN + L/R                |CMD + L/R                |                         |
+|Quarter size in corner   |ALT + WIN + L/R/U/D      |OPTION + CMD + L/R/U/D   |                         |
+|Maximize window          |WIN + U                  |CMD + U                  |                         |
+|Restore original size    |WIN + D                  |CMD + D                  |                         |
+|Toggle full screen       |WIN + Enter              |CMD + Enter              |                         |
+|Toggle sticky window     |ALT + WIN + Enter        |OPTION + CMD + Enter     |                         |
+|Cycle through app windows|WIN + </>                |CMD + </>                |WIN/CMD + MWheel L/R     |
+|Cycle through apps       |ALT + Tab                |OPTION + Tab             |ALT/OPTION + MWheel L/R  |
+
+
+## Window Tabs (ALT/ OPTION modifier)
+
+|Description              | x86 Keyboard            | MacOS Keyboard          |Mouse Action             |
+|-------------------------|-------------------------|-------------------------|-------------------------|
+|Switch Tabs              |ALT + </>                |OPTION + </>             |ThumbB U/D               |
+
 
 ## Applications (ALT/CMD/WIN)
-Programs and utilities used while working. Applications may have mutiple windows and multiple tabs or panes within. 
+Programs and utilities used while working. Make sure to switch to the desktop where
+an application is running (by script or using MacOS)
 
 
 |Description              | x86 Keyboard            | MacOS Keyboard          |
@@ -84,11 +78,12 @@ Programs and utilities used while working. Applications may have mutiple windows
 
 ## System
 
+
 |Description              | x86 Keyboard            | MacOS Keyboard          |
 |-------------------------|-------------------------|-------------------------|
 |Close Window             |CTRL + w                 |CTRL + w                 |
 |Copy/Cut/Paste           |WIN + C/X/V              |CMD + C/X/V              |
-|Exit application         |ALT + F4                 |OPTION + Q               |
+|Exit application         |ALT + F4                 |- (remove `OPTION + q`!  |
 |Lock screen              |CTRL + WIN + ALT + U     |CTRL + OPTION + CMD + U  |
 |Open Tab                 |CTRL + t                 |CTRL + t                 |
 |Restart                  |CTRL + WIN + ALT + L     |CTRL + OPTION + CMD + L  |
@@ -99,9 +94,23 @@ Programs and utilities used while working. Applications may have mutiple windows
 |Switch Application       |(SHIFT + ) ALT + Tab     |(SHIFT + ) OPTION + TAB  |
 |Zoom                     |CTRL + +/-               |CMD  + +/-               |
 
-## TODO
+# Appendix: MacOs Trackpad/ Magic Mouse
+
+MacOS users may find much use in [running a trackpad or magic mouse](https://medium.com/@arpitpalod/i-am-so-in-love-with-my-mac-trackpad-c3bbcecef41d) where 1/2/3 Finger swipes and 2 Finger TipTap may be configured via [BetterTouchTool](https://folivora.ai/) - this rocks but I gave it up in favour of a simple mouse which works on all systems.
+
+General idea:
+* 3Finger Swipes and Command-Key-Combinations act on applications, tabs, windows
+* 4Finger Swipes and Control-Key-Combinations act on spaces and mission control
+* 5Finger Swipes act on mac os system
+* left-right movements and arrows switch tabs, windows and spaces
+* up/down movements open/close something
+* up is fullscreen, down restores size
+* 3Finger tap and double tap is reserved for application-specific setup
+
+# TODO
 
 Example configurations and scripts for
 * xorg
-* mac os BT
+* mac os BTT
+* windows (any chance to get this working?)
 
