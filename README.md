@@ -29,32 +29,32 @@ For some parts, mouse wheel click respectively thumb button action proposals hav
 
 |Description              | x86 Keyboard            | MacOS Keyboard          |Mouse Action             |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-|Switch desktop/space     |CTRL + L/R               |CTRL + L/R               |MWheel L/R               |
-| + move window and scope |CTRL + U/D               |CTRL + U/D               |CTRL + MWheel L/R        |
-| + move window           |CTRL + ALT + L/R         |CTRL + CMD + L/R         |CTRL + ALT/CMD L/R       |
-|Switch to desktop 1      |CTRL + 1                 |CTRL + 1                 |                         |
-|Switch to desktop 2      |CTRL + 2                 |CTRL + 2                 |                         |
+|Switch desktop/space     |`CTRL + L/R`               |`CTRL + L/R`               |`MWheel L/R`               |
+| + move window and scope |`CTRL + U/D`               |`CTRL + U/D`               |`CTRL + MWheel L/R`        |
+| + move window           |`CTRL + ALT + L/R`         |`CTRL + CMD + L/R`         |`CTRL + ALT/CMD L/R`       |
+|Switch to desktop 1      |`CTRL + 1`                 |`CTRL + 1`                 |                         |
+|Switch to desktop 2      |`CTRL + 2`                 |`CTRL + 2`                 |                         |
 
 
 ## Window Move Resize (mainly WIN/CMD)
 
 |Description              | x86 Keyboard            | MacOS Keyboard          |Mouse Action             |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-|Half size left/right edge|WIN + L/R                |CMD + L/R                |                         |
-|Quarter size in corner   |ALT + WIN + L/R/U/D      |OPTION + CMD + L/R/U/D   |                         |
-|Maximize window          |WIN + U                  |CMD + U                  |                         |
-|Restore original size    |WIN + D                  |CMD + D                  |                         |
-|Toggle full screen       |WIN + Enter              |CMD + Enter              |                         |
-|Toggle sticky window     |ALT + WIN + Enter        |OPTION + CMD + Enter     |                         |
-|Cycle through app windows|WIN + </>                |CMD + </>                |WIN/CMD + MWheel L/R     |
-|Cycle through apps       |ALT + Tab                |OPTION + Tab             |ALT/OPTION + MWheel L/R  |
+|Half size left/right edge|`WIN + L/R`                |`CMD + L/R`                |                         |
+|Quarter size in corner   |`ALT + WIN + L/R/U/D`      |`OPTION + CMD + L/R/U/D`   |                         |
+|Maximize window          |`WIN + U`                  |`CMD + U`                  |                         |
+|Restore original size    |`WIN + D`                  |`CMD + D`                  |                         |
+|Toggle full screen       |`WIN + Enter`              |`CMD + Enter`              |                         |
+|Toggle sticky window     |`ALT + WIN + Enter`        |`OPTION + CMD + Enter`     |                         |
+|Cycle through app windows|`WIN + </>`                |`CMD + </>`                |`WIN/CMD + MWheel L/R`     |
+|Cycle through apps       |`ALT + Tab`                |`OPTION + Tab`             |`ALT/OPTION + MWheel L/R`  |
 
 
 ## Window Tabs (ALT/ OPTION modifier)
 
 |Description              | x86 Keyboard            | MacOS Keyboard          |Mouse Action             |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-|Switch Tabs              |ALT + </>                |OPTION + </>             |ThumbB U/D               |
+|Switch Tabs              |`ALT + </>`                |`OPTION + </>`             |`ThumbB U/D`               |
 
 
 ## Applications (ALT/CMD/WIN)
@@ -64,16 +64,16 @@ an application is running (by script or using MacOS)
 
 |Description              | x86 Keyboard            | MacOS Keyboard          |
 |-------------------------|-------------------------|-------------------------|
-|Main Terminal            |CTRL + Esc               |CTRL + Esc               |
-|Second Terminal          |SHIFT + Esc              |SHIFT + Esc              |
-|Editor                   |WIN + Esc                |CMD + Esc                |
-|Main Browser             |CTRL + Space             |CTRL + Space             |
-|Secondary Browser        |CTRL ALT + Space         |SHIFT + Space            |
-|Mail                     |WIN + Space              |OPTION + Space           |
-|Calendar                 |WIN + ALT + Space        |OPTION + CMD + Space     |
-|Calculator               |ALT + Space              |CMD + Space              |
-|File Manager             |WIN + E                  |CMD + E                  |
-|Music Player             |WIN + M                  |CMD + M                  |
+|Main Terminal            |`CTRL + Esc`               |`CTRL + Esc`               |
+|Second Terminal          |`SHIFT + Esc`              |`SHIFT + Esc`              |
+|Editor                   |`WIN + Esc`                |`CMD + Esc`                |
+|Main Browser             |`CTRL + Space`             |`CTRL + Space`             |
+|Secondary Browser        |`CTRL ALT + Space`         |`SHIFT + Space`            |
+|Mail                     |`WIN + Space`              |`OPTION + Space`           |
+|Calendar                 |`WIN + ALT + Space`        |`OPTION + CMD + Space`     |
+|Calculator               |`ALT + Space`              |`CMD + Space`              |
+|File Manager             |`WIN + E`                  |`CMD + E`                  |
+|Music Player             |`WIN + M`                  |`CMD + M`                  |
 
 
 ## System
@@ -81,18 +81,18 @@ an application is running (by script or using MacOS)
 
 |Description              | x86 Keyboard            | MacOS Keyboard          |
 |-------------------------|-------------------------|-------------------------|
-|Close Window             |CTRL + w                 |CTRL + w                 |
-|Copy/Cut/Paste           |WIN + C/X/V              |CMD + C/X/V              |
-|Exit application         |ALT + F4                 |- (remove `OPTION + q`!  |
-|Lock screen              |CTRL + WIN + ALT + U     |CTRL + OPTION + CMD + U  |
-|Open Tab                 |CTRL + t                 |CTRL + t                 |
-|Restart                  |CTRL + WIN + ALT + L     |CTRL + OPTION + CMD + L  |
-|Screen Shot (Area)       |WIN + SHIFT + S          |CMD + SHIFT + S          |
-|Search and Run           |WIN + R, ALT + Space     |CMD + Space              |
-|Shut down                |CTRL + WIN + ALT + D     |CTRL + OPTION + CMD + D  |
-|Sleep                    |CTRL + WIN + ALT + R     |CTRL + OPTION + CMD + R  |
-|Switch Application       |(SHIFT + ) ALT + Tab     |(SHIFT + ) OPTION + TAB  |
-|Zoom                     |CTRL + +/-               |CMD  + +/-               |
+|Close Window             |`CTRL + w`                 |`CTRL + w`                 |
+|Copy/Cut/Paste           |`WIN + C/X/V`              |`CMD + C/X/V`              |
+|Exit application         |`ALT + F4`                 |`-` (remove `OPTION + q`!  |
+|Lock screen              |`CTRL + WIN + ALT + U`     |`CTRL + OPTION + CMD + U`  |
+|Open Tab                 |`CTRL + t`                 |`CTRL + t`                 |
+|Restart                  |`CTRL + WIN + ALT + L`     |`CTRL + OPTION + CMD + L`  |
+|Screen Shot (Area)       |`WIN + SHIFT + S`          |`CMD + SHIFT + s`          |
+|Search and Run           |`WIN + R, ALT + Space`     |`CMD + Space`              |
+|Shut down                |`CTRL + WIN + ALT + D`     |`CTRL + OPTION + CMD + D`  |
+|Sleep                    |`CTRL + WIN + ALT + R`     |`CTRL + OPTION + CMD + R`  |
+|Switch Application       |`(SHIFT + ) ALT + Tab`     |`(SHIFT + ) OPTION + TAB`  |
+|Zoom                     |`CTRL + +/-`               |`CMD  + +/-`               |
 
 # Appendix: MacOs Trackpad/ Magic Mouse
 
