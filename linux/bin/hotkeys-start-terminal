@@ -1,0 +1,21 @@
+#!/bin/sh
+# this script takes care that a terminal is started only once and that
+# the terminal window is focussed
+
+PROFILE="Some_Profile"
+LOCAL_TERM="someuser@some_host"
+
+window_title=$(
+    wmctrl -lx \
+        | grep -vi "$LOCAL_TERM" \
+        | grep "gnome-terminal" \
+        | head -n 1 \
+        | cut -d ' ' -f 7-
+)
+
+if [ -z "$window_title" ]
+then
+        exec gnome-terminal --window-with-profile=$PROFILE
+else 
+        wmctrl -F -a "$window_title"
+fi

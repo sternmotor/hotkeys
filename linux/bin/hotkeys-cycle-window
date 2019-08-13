@@ -1,0 +1,38 @@
+#!/bin/bash
+# call like cycle_window back to enable reverse switch
+
+
+set -euo pipefail
+
+# get id of current window
+active_win_id="$(
+    xprop -root \
+    | grep '^_NET_ACTIVE_W' \
+    | awk -F'# 0x' '{print $2}'
+)"
+if [ "$active_win_id" == "0" ]; then
+    active_win_id=""
+fi
+
+# get window class of current window
+current_win_class=$( wmctrl -lx | grep $active_win_id | awk '{print $3}')
+
+# get list of all windows matching with the class
+win_list=$(wmctrl -x -l | grep -i $current_win_class | awk '{print $1}' )
+
+# reverse window list if wanted
+if [ "${1:-}" = "back" ]; then
+   win_list=$( echo $win_list | tr ' ' '\n'|tac|tr '\n' ' ')
+fi
+
+# get next window to focus on, removing id active
+switch_to=$(echo $win_list | sed s/.*$active_win_id// | awk '{print $1}')
+
+# if the current window is the last in the list ... take the first one
+if [ -z "$switch_to" ];then
+    switch_to=$(echo $win_list | awk '{print $1}')
+fi
+
+# switch to window
+wmctrl -i -a $switch_to
+

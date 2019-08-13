@@ -1,0 +1,19 @@
+#!/bin/sh
+# call this like 
+#   start-anyapp firefox|google-chrome-stable|terminator
+# this script takes care that this app is started only once and that
+# the application window is focussed
+
+set -eu
+
+CMD="${@:-}"
+if [ -z "$CMD" ]
+then
+    echo "Usage: $(basename $0) <executable in path>" 1>&2
+    echo "Example: $(basename $0) firefox" 1>&2
+    exit 2
+else
+    if ! wmctrl -x -a $CMD; then
+        exec $CMD
+    fi
+fi
