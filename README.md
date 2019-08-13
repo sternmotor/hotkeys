@@ -1,10 +1,10 @@
-# Desktop Hotkey Guideline
+# Desktop Hotkey Proposal
 Keyboard shortcut proposal for easy-to-learn, quick, mouse-free access with hands on keyboard under MacOS, Linux Desktops and Windows.
 
 ## Description
 Basically, all keyboard shortcuts listed here are just proposals. These have to be implemented in the MacOS/Linux/Windows Desktop. 
 
-There is some effort put in finding key combos which do not interfere with genuine setup under MacOS/Linux/Windows, but some adjustments may have to be taken. For example the unified approach to have `WIN/CMD` + `Cursor Keys` resize and move windows does not work under macOS where `CMD` + `Cursor Keys` cycles through desktop spaces. This can be switched to `CTRL` + `Cursor Keys` easily - just do it in case you happen to work on MacOS and linux desktop.
+There is some effort put in finding key combos which do not interfere with genuine setup under MacOS/Linux/Windows, but some adjustments may have to be taken. For example the unified approach to have `WIN/CMD`+`Cursor Keys` resize and move windows does not work under macOS where `CMD`+`Cursor Keys` cycles through desktop spaces. This can be switched to `CTRL`+`Cursor Keys` easily - just do it in case you happen to work on MacOS and linux desktop.
 
 All gestures which look too hard to learn easly are left out. 
 
@@ -20,41 +20,51 @@ Words and abbreviations used here:
 * Screen: for a two-monitor systems, you have two screens (left and right)
 * U/D/L/R: arrow keys up/ down/ left/right
 * Wheel L/R: mouse wheel click left/right
-* ThumbB U/D: mouse thumb button up/down
+* Thumb U/D: mouse thumb button up/down
 
 For some parts, mouse wheel click respectively thumb button action proposals have been added which fit in nicely. Make sure to use a mouse with support of mousewheel click (left/right) and a set of two thumb buttons like for example a Logitech M500.
+
+## Manual setup
+
+
+### MacOS
+
+* Settings > Mission Control > Disable "Monitors use different spaces"
+* BetterTouchTool: Disable `ALT`+`q` for closing apps - this is easily typed when trying to type `@`. Replace by `ALT`+`F4`.
 
 
 ## Desktop Navigation (mainly CTRL)
 
-|Description              | x86 Keyboard            | MacOS Keyboard          |Mouse Action             |
-|-------------------------|-------------------------|-------------------------|-------------------------|
-|Switch desktop/space     |`CTRL` + `L/R`               |`CTRL` + `L/R`               |`Wheel L/R`               |
-|` + `move window and scope |`CTRL` + `U/D`               |`CTRL` + `U/D`               |`CTRL` + `Wheel L/R`        |
-|` + `move window           |`CTRL` + `ALT` + `L/R`         |`CTRL` + `CMD` + `L/R`         |`CTRL` + `ALT/CMD L/R`       |
-|Switch to desktop 1      |`CTRL` + `1`                 |`CTRL` + `1`                 |                         |
-|Switch to desktop 2      |`CTRL` + `2`                 |`CTRL` + `2`                 |                         |
+|Description              |Linux IBM Keyboard       | MacOS Keyboard          |Mouse Action                    |
+|-------------------------|-------------------------|-------------------------|--------------------------------|
+|Switch desktop/space     |`CTRL`+`L/R`             |`CTRL`+`L/R`             |`Wheel L/R`                     |
+|+ move window to desktop |`CTRL`+`U`ALT`+`L/R      |`CTRL`+`ALT`+`L/R     |`CTRL`+`WIN/ALT`+`Wheel L/R` |
+|`+`move window           |`CTRL`+`ALT`+`L/R`       |`CTRL`+`SHIFT`+`L/R`     |`CTRL`+`ALT/CMD L/R`            |
+|Switch to desktop 1      |`CTRL`+`1`               |`CTRL`+`1`               |                                |
+|Switch to desktop 2      |`CTRL`+`2`               |`CTRL`+`2`               |                                |
 
 
 ## Window Move Resize (mainly WIN/CMD)
 
-|Description              | x86 Keyboard            | MacOS Keyboard          |Mouse Action             |
+|Description              |Linux IBM Keyboard       | MacOS Keyboard          |Mouse Action             |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-|Half size left/right edge|`WIN` + `L/R`                |`CMD` + `L/R`                |                         |
-|Quarter size in corner   |`ALT` + `WIN` + `L/R/U/D`      |`OPTION` + `CMD` + `L/R/U/D`   |                         |
-|Maximize window          |`WIN` + `Up`                  |`CMD` + `Up`                  |                         |
-|Restore original size    |`WIN` + `Down`                  |`CMD` + `Down`                  |                         |
-|Toggle full screen       |`WIN` + `Enter`              |`CMD` + `Enter`              |                         |
-|Toggle sticky window     |`ALT` + `WIN` + `Enter`        |`OPTION` + `CMD` + `Enter`     |                         |
-|Cycle through app windows|`WIN` + `</>`                |`CMD` + `</>`                |`WIN/CMD` + `Wheel L/R`     |
-|Cycle through apps       |`ALT` + `Tab`                |`OPTION` + `Tab`             |`ALT/OPTION` + `Wheel L/R`  |
+|Half size left/right edge|`WIN`+`L/R`              |`CMD`+`L/R`              |                         |
+|Quarter size in corner   |`ALT`+`WIN`+`L/R/U/D`    |`ALT`+`CMD`+`L/R/U/D`    |                         |
+|Maximize window          |`WIN`+`Up`               |`CMD`+`Up`               |                         |
+|Restore original size    |`WIN`+`Down`             |`CMD`+`Down`             |                         |
+|Toggle full screen       |`WIN`+`Enter`            |`CMD`+`Enter`            |                         |
+|Toggle sticky window     |`ALT`+`WIN`+`Enter`      |`ALT`+`CMD`+`Enter`      |                         |
+|Freely resize window     |`CTRL`+`WIN`+MouseMove   |`CTRL`+`ALT`+MouseMove   |see left columns         |
+|Freely move window       |`WIN`+`ALT`+MouseMove    |`ALT`+`CMD`+MouseMove    |see left columns         |
 
 
-## Window Tabs (ALT/ OPTION modifier)
+## Window Tabs (ALT/ ALT modifier)
 
-|Description              | x86 Keyboard            | MacOS Keyboard          |Mouse Action             |
+|Description              |Linux IBM Keyboard       | MacOS Keyboard          |Mouse Action             |
 |-------------------------|-------------------------|-------------------------|-------------------------|
-|Switch Tabs              |`ALT` + `</>`                |`OPTION` + `</>`             |`ThumbB U/D`               |
+|Cycle Tabs               |`CTRL`+`Tab`             |`CTRL`+`Tab`             |`Thumb`+`U/D`            |
+|Open Tab                 |`CTRL`+`t`               |`CTRL`+`t`               |`CTRL`+`Thumb`+`U`       |
+|Close Tab                |`CTRL`+`w`               |`CTRL`+`w`               |`CTRL`+`Thumb`+`D`       |
 
 
 ## Applications (ALT/CMD/WIN)
@@ -62,55 +72,67 @@ Programs and utilities used while working. Make sure to switch to the desktop wh
 an application is running (by script or using MacOS)
 
 
-|Description              | x86 Keyboard            | MacOS Keyboard          |
+|Description              |Linux IBM Keyboard       | MacOS Keyboard          |
 |-------------------------|-------------------------|-------------------------|
-|Main Terminal            |`CTRL` + `Esc`               |`CTRL` + `Esc`               |
-|Second Terminal          |`SHIFT` + `Esc`              |`SHIFT` + `Esc`              |
-|Editor                   |`WIN` + `Esc`                |`CMD` + `Esc`                |
-|Main Browser             |`CTRL` + `Space`             |`CTRL` + `Space`             |
-|Secondary Browser        |`CTRL ALT` + `Space`         |`SHIFT` + `Space`            |
-|Mail                     |`WIN` + `Space`              |`OPTION` + `Space`           |
-|Calendar                 |`WIN` + `ALT` + `Space`        |`OPTION` + `CMD` + `Space`     |
-|Calculator               |`ALT` + `Space`              |`CMD` + `Space`              |
-|File Manager             |`WIN` + `E`                  |`CMD` + `E`                  |
-|Music Player             |`WIN` + `M`                  |`CMD` + `M`                  |
+|Main Terminal            |`CTRL`+`Esc`             |`CTRL`+`Esc`             |
+|Second Terminal          |`SHIFT`+`Esc`            |`SHIFT`+`Esc`            |
+|Editor                   |`ALT`+`Esc`              |`ALT`+`Esc`           |
+|Calulator                |`WIN`+`Esc`              |`CMD`+`Esc`              |
+|Main Browser             |`SHIFT`+`ALT`+`Space`    |`SHIFT`+`ALT`+`Space`  |  ? 
+|Browser                  |`CTRL`+`ALT`+`Space`     |`CTRL`+`ALT`+`Space`  |  ?
+|Mail                     |`WIN`+`ALT`+`Space`      |`ALT`+`CMD`+`Space`  |   ?
+|File Manager             |`WIN`+`e`                |`CMD`+`e`                |   ?
+
+
+fetslegen modifier kombos:
+
+CTRL = DESKtops
+ALT  = Tabs
+WIN/CMD   = Windows
+
+`CTRL`+`WIN`       =  `CTRL`+`ALT`        xx-  Windows
+`WIN`+`ALT`        =  `ALT`+`CMD`	     -xx  Tab
+`CTRL`+`ALT`       =  `CTRL`+`CMD`           x-x  Applications
+`CTRL`+`WIN`+`ALT` =  `CTRL`+`ALT`+`CMD`  xxx  System
+
+## Productivity
+
+Shortcuts for working in desktop environment
+
+|Description              |Linux IBM Keyboard         | MacOS Keyboard              |
+|-------------------------|---------------------------|-----------------------------|
+|Screen Shot (Area)       |`CTRL`+`Print`             |`CMD`+`SHIFT`+`s`            |
+|Copy/Cut/Paste           |`CTRL`+`c/x/v`             |`CMD`+`c/x/v`                |
+|Search and Run           |`CTRL`+`Space`             |`CMD`+`Space`                |
+|Zoom Text                |`CTRL`+`+/-`               |`CMD `+`+/-`                 |
 
 
 ## System
 
 
-|Description              | x86 Keyboard            | MacOS Keyboard          |
-|-------------------------|-------------------------|-------------------------|
-|Close Window             |`CTRL` + `w`                 |`CTRL` + `w`                 |
-|Copy/Cut/Paste           |`WIN` + `c/x/v`              |`CMD` + `c/x/v`              |
-|Exit application         |`ALT` + `F4`                 |`-` (remove `OPTION` + `q`!  |
-|Lock screen              |`CTRL` + `WIN` + `ALT` + `Up`     |`CTRL` + `OPTION` + `CMD` + `Up`  |
-|Open Tab                 |`CTRL` + `t`                 |`CTRL` + `t`                 |
-|Restart                  |`CTRL` + `WIN` + `ALT` + `Left`     |`CTRL` + `OPTION` + `CMD` + `Left`  |
-|Screen Shot (Area)       |`WIN` + `SHIFT` + `S`          |`CMD` + `SHIFT` + `s`          |
-|Search and Run           |`WIN` + `R, ALT` + `Space`     |`CMD` + `Space`              |
-|Shut down                |`CTRL` + `WIN` + `ALT` + `Down`     |`CTRL` + `OPTION` + `CMD` + `Down`  |
-|Sleep                    |`CTRL` + `WIN` + `ALT` + `Right`     |`CTRL` + `OPTION` + `CMD` + `Right`  |
-|Switch Application       |`(SHIFT` + `) ALT` + `Tab`     |`(SHIFT` + `) OPTION` + `TAB`  |
-|Zoom                     |`CTRL` + `+/-`               |`CMD ` + `+/-`               |
+Applications
 
-# Appendix: MacOs Trackpad/ Magic Mouse
+|Description              |Linux IBM Keyboard         | MacOS Keyboard           |
+|-------------------------|---------------------------|--------------------------|
+|Switch application       |`ALT`+`Tab`                |`CMD`+`Tab`               |
+|Cycle application windows|`WIN`+`Tab`                |`ALT`+`Tab`               |
+|Exit application         |`ALT`+`F4`                 |                          |
+|New application window   |`CTRL`+`n`                 |`CMD`+`n`                 |
 
-MacOS users may find much use in [running a trackpad or magic mouse](https://medium.com/@arpitpalod/i-am-so-in-love-with-my-mac-trackpad-c3bbcecef41d) where 1/2/3 Finger swipes and 2 Finger TipTap may be configured via [BetterTouchTool](https://folivora.ai/) - this rocks but I gave it up in favour of a simple mouse which works on all systems.
+Finder/ File manager settings
 
-General idea:
-* 3Finger Swipes and Command-Key-Combinations act on applications, tabs, windows
-* 4Finger Swipes and Control-Key-Combinations act on spaces and mission control
-* 5Finger Swipes act on mac os system
-* left-right movements and arrows switch tabs, windows and spaces
-* up/down movements open/close something
-* up is fullscreen, down restores size
-* 3Finger tap and double tap is reserved for application-specific setup
+|Description              |Linux IBM Keyboard         | MacOS Keyboard           |
+|-------------------------|---------------------------|--------------------------|
+|Directory Up             |`CTRL`+`Up`                |`CMD`+`Up`                |
+|Show hidden files        |`CTRL`+`h`                 |`CMD`+`h`                 |
+|Create directory         |`CTRL`+`n`                 |`CMD`+`n`                 |
+|Create file              |`CTRL`+`SHIFT`+`n`         |`CMD`+`SHIFT`+`n`         |
 
-# TODO
+System
 
-Example configurations and scripts for
-* xorg
-* mac os BTT
-* windows (any chance to get this working?)
-
+|Description              |Linux IBM Keyboard         | MacOS Keyboard           |
+|-------------------------|---------------------------|--------------------------|
+|Lock screen              |`CTRL`+`WIN`+`ALT`+`Up`    |`CTRL`+`ALT`+`CMD`+`Up`   |
+|Sleep                    |`CTRL`+`WIN`+`ALT`+`Right` |`CTRL`+`ALT`+`CMD`+`Down` |
+|Restart computer         |`CTRL`+`WIN`+`ALT`+`Left`  |`CTRL`+`ALT`+`CMD`+`Left` |
+|Shut down                |`CTRL`+`WIN`+`ALT`+`Down`  |`CTRL`+`ALT`+`CMD`+`Right`|

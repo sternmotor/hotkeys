@@ -2,6 +2,11 @@ https://shortcutworld.com/Linux-Mint/linux/Linux-Mint_Shortcuts
 https://www.lifewire.com/how-to-change-the-linux-mint-cinnamon-keyboard-shortcuts-4064754
 
 
+
+Mouserad auf freier flache
+
+Standard-Setup markieren mit *
+
 gsettings:
 https://askubuntu.com/questions/597395/how-to-set-custom-keyboard-shortcuts-from-terminal
 
@@ -32,3 +37,11 @@ unifiy different approaches for nacvigating window and tabs and desktops, find a
 proprosal, example realizations with some kind of usage info in subfolders
 
 key bindings and simple mouse 
+
+* Vorschlag, wie sich in Jahren der Arbeit mit den verschiedenen Systemen 
+* Entwickelt unter Fluxbox, heftig inspiriert durch die Möglichkeiten von BTT (welche hier nnsatzweise ausgereizt werden)
+* nicht immer konsistent, dafür Einbindung von Standard-Einstellungen 
+
+CTRL entspricht oft CMD
+
+collision free setup
