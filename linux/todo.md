@@ -12,5 +12,23 @@ ideas:
     WIN Down = mini, towards center = normal
     keypad 5 = fullscreen
 
+    U = arrow up or keypad 5
+    Up  KP 5
+
+    <> ersetzen durch win-tab
+
+    check: layout macos -  linux
+
+    auf beschriftung gehen nicht auf tasten position
+
 manual steps:
 terminal: WIN-n to new window
+
+
+Text:
+
+unifiy different approaches for nacvigating window and tabs and desktops, find a scheme not breaking default settings and easy to learn
+
+proprosal, example realizations with some kind of usage info in subfolders
+
+key bindings and simple mouse 
