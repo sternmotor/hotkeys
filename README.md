@@ -38,8 +38,7 @@ For some parts, mouse wheel click respectively thumb button action proposals hav
 |Description              |Linux IBM Keyboard       | MacOS Keyboard          |Mouse Action                    |
 |-------------------------|-------------------------|-------------------------|--------------------------------|
 |Switch desktop/space     |`CTRL`+`L/R`             |`CTRL`+`L/R`             |`Wheel L/R`                     |
-|+ move window to desktop |`CTRL`+`U`ALT`+`L/R      |`CTRL`+`ALT`+`L/R     |`CTRL`+`WIN/ALT`+`Wheel L/R` |
-|`+`move window           |`CTRL`+`ALT`+`L/R`       |`CTRL`+`SHIFT`+`L/R`     |`CTRL`+`ALT/CMD L/R`            |
+|+ move window to desktop |`CTRL`+`U`ALT`+`L/R      |`CTRL`+`ALT`+`L/R`       |`CTRL`+`WIN/ALT`+`Wheel L/R`    |
 |Switch to desktop 1      |`CTRL`+`1`               |`CTRL`+`1`               |                                |
 |Switch to desktop 2      |`CTRL`+`2`               |`CTRL`+`2`               |                                |
 
@@ -57,6 +56,24 @@ For some parts, mouse wheel click respectively thumb button action proposals hav
 |Freely resize window     |`CTRL`+`WIN`+MouseMove   |`CTRL`+`ALT`+MouseMove   |see left columns         |
 |Freely move window       |`WIN`+`ALT`+MouseMove    |`ALT`+`CMD`+MouseMove    |see left columns         |
 
+```
+modifier kombos for applications and window res^ize:
+
+this modifiers work blind without needing to now if its mac or linux
+replace shift-ctrl by ctrl-win
+replace shift-CMD by alt-cmd
+
+`CTRL`+`WIN`       =  `CTRL`+`ALT`        xx-  
+`WIN`+`ALT`        =  `ALT`+`CMD`	  -xx
+`CTRL`+`ALT`       =  `CTRL`+`CMD`        x-x  
+`CTRL`+`WIN`+`ALT` =  `CTRL`+`ALT`+`CMD`  xxx
+
+
+SHIFT  +ESC
+CTRL + ESC
+SHIFT + TAB
+```
+
 
 ## Window Tabs (ALT/ ALT modifier)
 
@@ -67,68 +84,58 @@ For some parts, mouse wheel click respectively thumb button action proposals hav
 |Close Tab                |`CTRL`+`w`               |`CTRL`+`w`               |`CTRL`+`Thumb`+`D`       |
 
 
-## Applications (ALT/CMD/WIN)
-Programs and utilities used while working. Make sure to switch to the desktop where
-an application is running (by script or using MacOS)
+## Applications 
+Programs and utilities used while working. This modifiers work blind without needing to now if its mac or linux
 
 
-|Description              |Linux IBM Keyboard       | MacOS Keyboard          |
-|-------------------------|-------------------------|-------------------------|
-|Main Terminal            |`CTRL`+`Esc`             |`CTRL`+`Esc`             |
-|Second Terminal          |`SHIFT`+`Esc`            |`SHIFT`+`Esc`            |
-|Editor                   |`ALT`+`Esc`              |`ALT`+`Esc`           |
-|Calulator                |`WIN`+`Esc`              |`CMD`+`Esc`              |
-|Main Browser             |`SHIFT`+`ALT`+`Space`    |`SHIFT`+`ALT`+`Space`  |  ? 
-|Browser                  |`CTRL`+`ALT`+`Space`     |`CTRL`+`ALT`+`Space`  |  ?
-|Mail                     |`WIN`+`ALT`+`Space`      |`ALT`+`CMD`+`Space`  |   ?
-|File Manager             |`WIN`+`e`                |`CMD`+`e`                |   ?
+|Description              |Linux IBM Keyboard         | MacOS Keyboard            |
+|-------------------------|---------------------------|---------------------------|
+|Main Terminal            |`CTRL`+`Esc`               |`CTRL`+`Esc`               |
+|Second Terminal          |`SHIFT`+`Esc`              |`SHIFT`+`Esc`              |
+|Calulator                |`SHIFT`+`Tab`              |`SHIFT`+`Tab`              |
+|Main browser             |`CTRL`+`WIN`+`Space` (xx-) |`CTRL`+`ALT`+`Space` (xx-) |   
+|Secondary browser        |`WIN`+`ALT`+`Space`  (-xx) |`ALT`+`CMD`+`Space`  (-xx) |  
+|Mail                     |`CTRL`+`ALT`+`Space` (x-x) |`CTRL`+`CMD`+`Space` (x-x) |  
+|Messenger                |`CTRL`+`WIN`+`ALT`+`Space` |`CTRL`+`ALT`+`CMD`+`Space` |  
 
-
-fetslegen modifier kombos:
-
-CTRL = DESKtops
-ALT  = Tabs
-WIN/CMD   = Windows
-
-`CTRL`+`WIN`       =  `CTRL`+`ALT`        xx-  Windows
-`WIN`+`ALT`        =  `ALT`+`CMD`	     -xx  Tab
-`CTRL`+`ALT`       =  `CTRL`+`CMD`           x-x  Applications
-`CTRL`+`WIN`+`ALT` =  `CTRL`+`ALT`+`CMD`  xxx  System
 
 ## Productivity
 
-Shortcuts for working in desktop environment
+Common shortcuts for working in desktop environment
+
 
 |Description              |Linux IBM Keyboard         | MacOS Keyboard              |
 |-------------------------|---------------------------|-----------------------------|
-|Screen Shot (Area)       |`CTRL`+`Print`             |`CMD`+`SHIFT`+`s`            |
-|Copy/Cut/Paste           |`CTRL`+`c/x/v`             |`CMD`+`c/x/v`                |
-|Search and Run           |`CTRL`+`Space`             |`CMD`+`Space`                |
-|Zoom Text                |`CTRL`+`+/-`               |`CMD `+`+/-`                 |
+|Screen Shot (Area)       |`CTRL`+`SHIFT`+`s`  (x--)  |`CMD`+`SHIFT`+`s`    (--x)   |
+|                         |`CTRL`+`Print`      (x--)  |                             |
+|Copy/Cut/Paste           |`CTRL`+`c/x/v`      (x--)  |`CMD`+`c/x/v`        (--x)   |
+|Show clipboard history   |`CTRL`+`WIN`+`v`    (x--)  |`CMD`+`ALT`+`v`      (--x)   |
+|Search and Run           |`CTRL`+`Space`      (x--)  |`CMD`+`Space`        (--x)   |
+|Zoom Text                |`CTRL`+`+/-`        (x--)  |`CMD `+`+/-`         (--x)   |
 
 
 ## System
 
 
-Applications
+### Applications
 
 |Description              |Linux IBM Keyboard         | MacOS Keyboard           |
 |-------------------------|---------------------------|--------------------------|
-|Switch application       |`ALT`+`Tab`                |`CMD`+`Tab`               |
-|Cycle application windows|`WIN`+`Tab`                |`ALT`+`Tab`               |
-|Exit application         |`ALT`+`F4`                 |                          |
-|New application window   |`CTRL`+`n`                 |`CMD`+`n`                 |
+|Switch application       |`ALT`+`Tab` (--x)          |`CMD`+`Tab`  (--x)        |
+|Cycle application windows|`ALT`+`</>` (--x)          |`CMD`+`</>`  (--x)        |
+|Exit application         |`ALT`+`F4`  (--x)          |`CMD`+`F4`   (--x)        |
+|New application window   |`CTRL`+`n`  (x--)          |`CMD`+`n`    (--x)        |
 
-Finder/ File manager settings
+### Finder/ File manager settings
 
 |Description              |Linux IBM Keyboard         | MacOS Keyboard           |
 |-------------------------|---------------------------|--------------------------|
-|Directory Up             |`CTRL`+`Up`                |`CMD`+`Up`                |
-|Show hidden files        |`CTRL`+`h`                 |`CMD`+`h`                 |
-|Create directory         |`CTRL`+`n`                 |`CMD`+`n`                 |
-|Create file              |`CTRL`+`SHIFT`+`n`         |`CMD`+`SHIFT`+`n`         |
+|Directory Up             |`CTRL`+`Up`        (x--)   |`CMD`+`Up`        (--x)   |
+|Show hidden files        |`CTRL`+`h`         (x--)   |`CMD`+`h`         (--x)   |
+|Create directory         |`CTRL`+`n`         (x--)   |`CMD`+`n`         (--x)   |
+|Create file              |`CTRL`+`SHIFT`+`n` (x--)   |`CMD`+`SHIFT`+`n` (--x)   |
 
-System
+### System (xxx)
 
 |Description              |Linux IBM Keyboard         | MacOS Keyboard           |
 |-------------------------|---------------------------|--------------------------|
