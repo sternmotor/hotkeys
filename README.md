@@ -38,7 +38,7 @@ For some parts, mouse wheel click respectively thumb button action proposals hav
 |Description              |Linux IBM Keyboard       | MacOS Keyboard          |Mouse Action                    |
 |-------------------------|-------------------------|-------------------------|--------------------------------|
 |Switch desktop/space     |`CTRL`+`L/R`             |`CTRL`+`L/R`             |`Wheel L/R`                     |
-|+ move window to desktop |`CTRL`+`U`ALT`+`L/R      |`CTRL`+`ALT`+`L/R`       |`CTRL`+`WIN/ALT`+`Wheel L/R`    |
+|+ move window to desktop |`CTRL`+`ALT`+`L/R`       |`CTRL`+`ALT`+`L/R`       |`CTRL`+`WIN/ALT`+`Wheel L/R`    |
 |Switch to desktop 1      |`CTRL`+`1`               |`CTRL`+`1`               |                                |
 |Switch to desktop 2      |`CTRL`+`2`               |`CTRL`+`2`               |                                |
 
