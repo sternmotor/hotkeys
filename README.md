@@ -113,10 +113,6 @@ editors) cycle through application instances.
 
 Applications 
 ------------
-```  
-SHIFT  +ESC
-CTRL + ESC
-SHIFT + TAB
 ```
 Programs and utilities used while working. This modifiers work blind without needing to now if its mac or linux
 
@@ -164,10 +160,10 @@ Common shortcuts for working in desktop environment
 
 |Description              |Linux IBM Keyboard         | MacOS Keyboard           |
 |-------------------------|---------------------------|--------------------------|
-|Directory Up             |`CTRL`+`Up`        (x--)   |`CMD`+`Up`        (--x)   |
+|Directory Up             |`CTRL`+`U`         (x--)   |`CMD`+`U`         (--x)   |
 |Show hidden files        |`CTRL`+`h`         (x--)   |`CMD`+`h`         (--x)   |
-|Create directory         |`CTRL`+`n`         (x--)   |`CMD`+`n`         (--x)   |
-|Create file              |`CTRL`+`SHIFT`+`n` (x--)   |`CMD`+`SHIFT`+`n` (--x)   |
+|Create directory         |`CTRL`+`SHIFT`+`d` (^x--)  |`CMD`+`SHIFT`+`d` (^--x)  |
+|Create file              |`CTRL`+`SHIFT`+`f` (^x--)  |`CMD`+`SHIFT`+`f` (^--x)  |
 
 ### System (xxx)
 
