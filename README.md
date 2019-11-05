@@ -42,6 +42,9 @@ For some parts, mouse wheel click respectively thumb button action proposals hav
 |Switch to desktop 1      |`CTRL`+`1`               |`CTRL`+`1`               |                                |
 |Switch to desktop 2      |`CTRL`+`2`               |`CTRL`+`2`               |                                |
 
+mac os shortcut? switch to window? ist CMD+Num nicht für tabs? CMD + number = tab navigation!
+eheer STRG+WIN + 1/2/3
+
 
 ## Window Move Resize (mainly WIN/CMD)
 
