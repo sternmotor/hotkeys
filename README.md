@@ -45,13 +45,12 @@ Switching desktops  bases on using `CTRL` key, combined like
 * `CTRL` + `WIN` (Mac: `ALT`) + left/right or numbers for moving windows between desktops (memorize modifier key pattern "xx-")
 
 
-|Description              |Linux IBM Keyboard       | MacOS Keyboard          |Mouse Action                    |
-|-------------------------|-------------------------|-------------------------|--------------------------------|
-|Switch desktop/space     |`CTRL`+`L/R`             |`CTRL`+`L/R`             |`CTRL + Wheel L/R`              |
-|+ move window to desktop |`CTRL`+`WIN`+`L/R`       |`CTRL`+`ALT`+`L/R`       |`CTRL`+`WIN/ALT`+`Wheel L/R`    |
-|Switch to desktop 1      |`CTRL`+`1`               |`CTRL`+`1`               |                                |
-|+ move window to desktop |`CTRL`+`WIN`+`1`         |`CTRL`+`ALT`+`1`         |                                |
-|Switch to desktop 2      |`CTRL`+`2`               |`CTRL`+`2`               |                                |
+|Description              |Linux IBM Keyboard        | MacOS Keyboard           |Mouse Action                       |
+|-------------------------|--------------------------|--------------------------|-----------------------------------|
+|Switch desktop/space     |`CTRL`+`WIN`+`L/R`        |`CTRL`+`ALT`+`L/R`        |`CTRL`+`WIN/ALT`+`Wheel L/R`       |
+|+ move window to desktop |`SHIFT`+`CTRL`+`WIN`+`L/R`|`SHIFT`+`CTRL`+`ALT`+`L/R`|`SHIFT`+CTRL`+`WIN/ALT`+`Wheel L/R`|
+|Switch to desktop 1      |`CTRL`+`WIN`+`1`          |`CTRL`+`ALT`+`1`          |                                   |
+|+ move window to desktop |`SHIFT`+`CTRL`+`WIN`+`1`  |`SHIFT`+`CTRL`+`ALT`+`1`  |                                   |
 
 
 Monitor Navigation ("^x-")
@@ -83,8 +82,8 @@ Resizing and moving windows bases on using `WIN`/ `ALT` key, combined like
 |Quarter size in corner   |`WIN`+`ALT`+`L/R/U/D`    |`ALT`+`CMD`+`L/R/U/D`    |                         |
 |Full screen              |`WIN`+`Enter`            |`ALT`+`Enter`            |                         |
 |Sticky window            |`WIN`+`ALT`+`Enter`      |`ALT`+`CMD`+`Enter`      |                         |
-|Freely resize window     |                         |                         |`WIN`/`ALT`+ MouseMove   |
-|Freely move window       |                         |            |`WIN`/`ALT`+ `ALT`/`CMD`+ MouseMove   |
+|Freely resize window     |                         |                         |`WIN/ALT`+ MouseMove     |
+|Freely move window       |                         |                |`WIN/ALT`+ `ALT/CMD`+ MouseMove   |
 
 
 Window Tabs ("x-x")
@@ -107,8 +106,8 @@ editors) cycle through application instances.
 |                         |`ALT`+`</>`              |`CMD`+`</>`              |                         |
 |Switch to tab 1          |`ALT`+`1`                |`CMD`+`1`                |                         |
 |Cycle Tabs               |`CTRL`+`Tab`             |`CTRL`+`Tab`             |                         |
-|Open Tab                 |`CTRL`+`t`               |`CTRL`+`t`               |`CTRL`+`ALT`/`CMD`+`Thumb U`|
-|Close Tab                |`CTRL`+`w`               |`CTRL`+`w`               |`CTRL`+`ALT`/`CMD`+`Thumb D`|
+|Open Tab                 |`CTRL`+`t`               |`CTRL`+`t`               |`CTRL`+`ALT/CMD`+`Thumb U`|
+|Close Tab                |`CTRL`+`w`               |`CTRL`+`w`               |`CTRL`+`ALT/CMD`+`Thumb D`|
 
 
 Applications 
