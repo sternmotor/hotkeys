@@ -1,6 +1,6 @@
 Desktop Hotkey Proposal
 =======================
-Keyboard shortcut proposal for easy-to-learn, quick, mouse-free access with hands on keyboard under MacOS, Linux Desktops and Windows.
+Keyboard shortcut proposal for easy-to-learn, quick, mouse-free access with hands on keyboard under MacOS and Linux Desktops.
 
 Description
 -----------
@@ -135,7 +135,8 @@ Common shortcuts for working in desktop environment
 
 |Description              |Linux IBM Keyboard         | MacOS Keyboard              |
 |-------------------------|---------------------------|-----------------------------|
-|Screen Shot (Area)       |`CTRL`+`SHIFT`+`s`  (x--)  |`CMD`+`SHIFT`+`s`    (--x)   |
+|Screen Shot (full screen)|`CTRL`+`SHIFT`+`?`  (x--)  |`CMD`+`SHIFT`+`3`    (--x)   |
+|Screen Shot (area)       |`CTRL`+`SHIFT`+`s`  (x--)  |`CMD`+`SHIFT`+`4`    (--x)   |
 |                         |`CTRL`+`Print`      (x--)  |                             |
 |Copy/Cut/Paste           |`CTRL`+`c/x/v`      (x--)  |`CMD`+`c/x/v`        (--x)   |
 |Show clipboard history   |`CTRL`+`WIN`+`v`    (x--)  |`CMD`+`ALT`+`v`      (--x)   |
